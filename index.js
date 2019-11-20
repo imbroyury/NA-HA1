@@ -4,6 +4,10 @@ const LayoutService = require('./services/LayoutService.js');
 
 const server = express();
 
+server.get('/', (req, res) => {
+    res.redirect('/login');
+})
+
 server.get('/login', (req, res) => {
     const { username, password } = req.query;
     const areCredentialsProvided = !!username && !!password;
