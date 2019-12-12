@@ -32,7 +32,7 @@ const getLoginPageLayout = (
     <body>
         <div class="content">
         <p>Please enter your credentials below to log in</p>
-            <form action="/login">
+            <form action="/login" method="POST">
                 <label for="username">Username</label>
                 <input placeholder="username" name="username" id="username" value="${username}" required></input><br> \
                 <label for="password">Password</label>
